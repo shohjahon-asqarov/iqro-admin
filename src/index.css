@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @layer base {
+    html {
+      font-family: "Poppins", sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #00A99E;
+    }
+    p {
+      color: #333;
+    }
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-5;
+  }
+  .btn-blue {
+    @apply text-white font-medium py-3.5 px-8 rounded-full;
+    background: #00A99E;
+  }
+  .btn-card {
+    @apply bg-[#00A99E] text-white font-medium py-2 px-4 rounded-xl;
+  }
+  .btn-orange {
+    @apply py-2.5 px-6 text-white bg-orange rounded-lg;
+  }
+  .answers-list {
+    @apply flex border-2 border-gray-300 px-3 py-2.5 rounded-lg bg-white;
+  }
+  .correct-answer {
+    @apply border-green;
+  }
+}
+
+.forma .input:hover {
+  border-color: #00A99E;
+}
+
+.forma .input:focus , .ant-input-affix-wrapper:focus {
+  border-color: #00A99E;
+  outline-color: #00A99E !important;
+}
+
+.forma .input:focus {
+  box-shadow: none !important;
+}
+
+.ant-input-affix-wrapper {
+  box-shadow: none;
+}
+
+.ant-btn-primary {
+  background: #00A99E;
+}
+
+.ant-btn-primary:hover {
+  background: #00A99E !important;
+}
+
