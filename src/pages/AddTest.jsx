@@ -168,6 +168,10 @@ const AddTest = () => {
                                         {
                                             value: 'Rus-tili',
                                             label: 'Rus-tili',
+                                        },
+                                        {
+                                            value: 'Matematika',
+                                            label: 'Matematika',
                                         }
                                     ]}
                                 />
