@@ -1,28 +1,33 @@
-import { Input, Modal, Radio, Select } from 'antd'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { UserOutlined, TagsOutlined } from '@ant-design/icons'
+// antd components
+import { Input, Modal, Radio, Select } from 'antd';
+
+// antd icons
+import { UserOutlined, TagsOutlined } from '@ant-design/icons';
+
+// firebase 
 import { db } from '../firebase';
 import { addDoc, collection } from 'firebase/firestore';
+
+// toastify
 import { toast } from 'react-toastify';
+
+// loader
 import Loader from '../components/Loader';
 
 const AddTest = () => {
+
+    // states
     const [status, setStatus] = useState(false)
     const [category, setCategory] = useState('')
     const [editQuestion, setEditQuestion] = useState('')
     const [editIndex, setEditIndex] = useState(null)
-
     const [correct, setCorrect] = useState(0)
-
     const [loading, setLoading] = useState(false)
-
     const [questions, setQuestions] = useState([])
-
     const [options, setOptions] = useState({})
-
     const [complated, setComplated] = useState(false)
-
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const addTest = async (e) => {
@@ -150,29 +155,14 @@ const AddTest = () => {
                                     size='large'
                                     options={[
                                         {
-                                            value: 'All',
-                                            label: 'Barchasi',
+                                            value: 'Front-end',
+                                            label: 'Front-end',
                                         },
                                         {
-                                            value: 'English',
-                                            label: 'English',
+                                            value: 'Back-end',
+                                            label: 'Back-end',
                                         },
-                                        {
-                                            value: 'Fizika',
-                                            label: 'Fizika',
-                                        },
-                                        {
-                                            value: 'Ona-tili',
-                                            label: 'Ona-tili',
-                                        },
-                                        {
-                                            value: 'Rus-tili',
-                                            label: 'Rus-tili',
-                                        },
-                                        {
-                                            value: 'Matematika',
-                                            label: 'Matematika',
-                                        }
+
                                     ]}
                                 />
                                 <div className="flex justify-end">
@@ -266,6 +256,7 @@ const AddTest = () => {
             {loading && <Loader />}
         </section >
     )
+
 }
 
 export default AddTest

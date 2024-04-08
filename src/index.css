@@ -1,12 +1,13 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* base */
 @layer base {
   @layer base {
     html {
@@ -16,7 +17,7 @@
     h2,
     h3,
     h4 {
-      color: #00A99E;
+      color: #00a99e;
     }
     p {
       color: #333;
@@ -24,13 +25,14 @@
   }
 }
 
+/* components */
 @layer components {
   .container {
     @apply max-w-7xl mx-auto px-5;
   }
   .btn-blue {
     @apply text-white font-medium py-3.5 px-8 rounded-full;
-    background: #00A99E;
+    background: #00a99e;
   }
   .btn-card {
     @apply bg-[#00A99E] text-white font-medium py-2 px-4 rounded-xl;
@@ -46,13 +48,15 @@
   }
 }
 
+/* other styles */
 .forma .input:hover {
-  border-color: #00A99E;
+  border-color: #00a99e;
 }
 
-.forma .input:focus , .ant-input-affix-wrapper:focus {
-  border-color: #00A99E;
-  outline-color: #00A99E !important;
+.forma .input:focus,
+.ant-input-affix-wrapper:focus {
+  border-color: #00a99e;
+  outline-color: #00a99e !important;
 }
 
 .forma .input:focus {
@@ -64,10 +68,9 @@
 }
 
 .ant-btn-primary {
-  background: #00A99E;
+  background: #00a99e;
 }
 
 .ant-btn-primary:hover {
-  background: #00A99E !important;
+  background: #00a99e !important;
 }
-

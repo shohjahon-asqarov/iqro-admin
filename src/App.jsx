@@ -1,12 +1,14 @@
-import React from 'react'
-import AddTest from './pages/AddTest'
+import React from 'react';
 
+// pages
+import AddTest from './pages/AddTest';
+
+// toadtify
 import { ToastContainer } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
 
+// bootstrap icons
 import 'bootstrap-icons/font/bootstrap-icons.css'
-
 
 const App = () => {
   return (
